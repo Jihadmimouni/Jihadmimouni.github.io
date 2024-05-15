@@ -3,29 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Tagline or short introduction</p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Brief introduction about yourself.</p>
+    <!-- Navigation -->
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">Your Name</a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">About</a>
+                <a class="navbar-item" href="#resume">Resume</a>
+                <a class="navbar-item" href="#portfolio">Portfolio</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero is-primary is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">Your Name</h1>
+                <h2 class="subtitle">Your Tagline or Short Introduction</h2>
+            </div>
+        </div>
     </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Summary of your resume.</p>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="title">About Me</h2>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="images/profile.jpg" alt="Your Name">
+                    </figure>
+                </div>
+                <div class="column">
+                    <p>Brief introduction about yourself. Highlight your skills, experience, and what makes you unique.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Showcase your projects.</p>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="title">Resume</h2>
+            <p>Summary of your resume.</p>
+            <!-- Add more detailed resume content here -->
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>How to reach you.</p>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="title">Portfolio</h2>
+            <div class="columns">
+                <!-- Add your project details here -->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://via.placeholder.com/300" alt="Project Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">Project Title</p>
+                            <p class="content">Description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project card for more projects -->
+            </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="title">Contact</h2>
+            <p>How to reach you.</p>
+            <!-- Add contact form or details here -->
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
