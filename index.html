@@ -6,6 +6,7 @@
     <title>Your Name - Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,7 +25,7 @@
     </nav>
 
     <!-- Header Section -->
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-primary is-fullheight-with-navbar">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title">Your Name</h1>
@@ -32,6 +33,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -87,10 +89,34 @@
     <section id="contact" class="section">
         <div class="container">
             <h2 class="title">Contact</h2>
-            <p>How to reach you.</p>
-            <!-- Add contact form or details here -->
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" name="_replyto" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
+    
 
     <script src="js/scripts.js"></script>
 </body>
